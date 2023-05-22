@@ -1,0 +1,53 @@
+.formDiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 24px;
+    padding-right: 24px;
+}
+.formDiv label {
+    color: var(--dark-disable);
+    font-size: var(--size-normal)
+}
+.formDiv input {
+    /* width: 350px; */
+    height: 24px;
+    color: var(--dark-secondary1);
+    color: var(--dark-disable);
+    font-size: var(--size-small);
+    background: var(--dark-secondary2);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    /* border: 1px solid var(--dark-main1-opc); */
+    padding: var(--pd-big) var(--pd-medium);
+}
+.formDiv input:focus {
+    border: none;
+    border-bottom: 2px solid var(--dark-main1);
+}
+.formDiv input::-webkit-outer-spin-button,
+.formDiv input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.formDiv input[type=number] {
+  -moz-appearance: textfield;
+}
+.formDiv .label-error {
+  color: var(--dark-warning);
+}
+.formDiv .inpt-error {
+  border-bottom: 2px solid var(--dark-warning)
+}
+.formDiv div {
+  display: flex;
+  flex-direction: column;
+}
+.formDiv .p-error {
+    font-size: var(--size-x-small);
+    color: #FF0022;
+    transform: translateX(24px) translateY(4px)
+}

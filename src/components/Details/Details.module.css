@@ -1,0 +1,51 @@
+.details { 
+    position: relative;
+    height: 200px;
+    background: var(--dark-secondary2);
+    border-radius: var(--radius);
+    padding: var(--pd-medium);
+}
+.details .head {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+    color: var(--dark-secondary1);
+}
+.details .head .svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: var(--pd-small);
+    background: var(--dark-main1);
+}
+.details .head svg {
+    height: 32px;
+    width: 32px;
+    fill: var(--dark-secondary1);
+}
+.details .head .type {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    border-radius: var(--radius-btn);
+    padding: var(--pd-xx-small);
+    color: var(--dark-main1);
+    background: var(--dark-main1-opc);
+    text-transform: capitalize;
+    font-size: var(--size-x-small);
+    font-weight: var(--font-semibold);
+}
+.details .head p.name {
+    font-size: var(--size-normal);
+}
+.details .head .influencer {
+    color: var(--dark-warning);
+    background: var(--dark-warning-opc);
+    text-transform: capitalize;
+}
+.details .head .income {
+    color: var(--dark-disable);
+    font-size: var(--size-small);
+}

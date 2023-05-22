@@ -1,0 +1,140 @@
+.formControl {
+    position: relative;
+}
+.formControl input {
+    width: 350px;
+    height: 24px;
+    color: var(--dark-secondary1);
+    font-size: var(--size-small);
+    background: var(--dark-terciary1);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: var(--pd-big) var(--pd-medium);
+}
+.formControl select {
+    width: 350px;
+    height: 24px;
+    color: var(--dark-disable);
+    font-size: var(--size-small);
+    background: var(--dark-terciary1);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    height: 64px;
+    padding-left: var(--pd-medium);
+    padding-right: var(--pd-medium);
+    appearance: none;
+    /* transform: translateX(24px) */
+    /* padding: var(--pd-big) var(--pd-medium); */
+}
+.formControl input[type="date"] {
+    color: var(--dark-disable);
+}
+.formControl input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+.formControl select > option{
+    border: none;
+    outline: none;
+}
+.formControl input::-webkit-outer-spin-button,
+.formControl input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.formControl input[type=number] {
+  -moz-appearance: textfield;
+}
+.formControl label {
+    position: absolute;
+    left: 24px;
+    transform: translateY(24px);
+    color: var(--dark-disable);
+    transition: 500ms;
+    pointer-events: none;
+    font-size: var(--size-small);
+}
+.formControl span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    /* width: 100%; */
+    background: var(--dark-main1);
+}
+.formControl input:focus {
+    border-bottom: 2px solid var(--dark-main1)
+}
+.formControl input:focus ~ .formControl label {
+    transform: translateY(0)
+}
+.formControl .error-message {
+    font-size: var(--size-x-small);
+    color: #FF0022;
+    transform: translateX(24px) translateY(4px)
+}
+.formControl .error-input {
+    border-bottom: 2px solid #FF0022!important
+}
+.formControl .error-label {
+    color: #FF0022!important
+}
+.formControl .radioInpt {
+    display: flex;
+    gap: 24px;
+    padding: 0 0 var(--pd-small) var(--pd-medium)
+}
+.formControl .radioInpt > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.formControl .radioInpt label {
+    position: relative;
+    left: 0;
+    transform: translateY(0);
+    pointer-events: all;
+    text-transform: capitalize;
+}
+.formControl .radioInpt input {
+    width: 14px;
+    height: 14px;
+}
+.formControl input[type="file"] {
+    display: none;
+}
+.formControl .fileLabel {
+    position: relative;
+    left: 0;
+    width: 350px;
+    height: 24px;
+    display: block;
+    transform: none;
+    color: var(--dark-secondary1);
+    font-size: var(--size-small);
+    background: var(--dark-terciary1);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: var(--pd-big) var(--pd-medium);
+    pointer-events: all;
+    cursor: pointer;
+}
+.inptSm input {
+    width: 100%!important;
+}
+.labelSSm {
+    opacity: 0;;
+}
+input.inptSSm {
+    width: 100px!important;
+    padding: 16px;
+    border-bottom: none!important;
+    color: var(--dark-disable);
+}
+input.inptSSm:focus {
+    border-bottom: 2px solid var(--dark-main1)!important
+}

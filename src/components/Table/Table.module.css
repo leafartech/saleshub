@@ -1,0 +1,262 @@
+.myTable {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.myTable .tableHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.myTable form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.myTable input {
+    width: 350px;
+    height: 24px;
+    color: var(--dark-disable);
+    font-size: var(--size-small);
+    background: var(--dark-secondary2);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: var(--pd-medium);
+    padding-left: 52px;
+}
+.myTable .searchSvg {
+    position: absolute;
+    left: 16px;
+    height: 24px;
+    width: 24px;
+    fill: var(--dark-disable);
+}
+.myTable .view {
+    display: flex;
+    gap: 8px;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+}
+.myTable .view button {
+    width: 48px;
+    height: 48px;
+    outline: none;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-secondary2);
+    border-radius: var(--radius);
+    border: 1px solid var(--dark-secondary2);
+    cursor: pointer;
+}
+.myTable .view button svg {
+    height: 24px;
+    width: 24px;
+    fill: var(--dark-disable);
+}
+.myTable .view button:hover svg {
+    fill: var(--dark-main1);
+}
+.myTable .view button.active svg {
+    fill: var(--dark-main1);
+}
+.myTable .tableBody table {
+    width: 100%;
+    background: var(--dark-secondary2);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    padding: var(--pd-small);
+}
+.myTable .tableBody table thead tr {
+    border-bottom: 2px solid var(--dark-terciary1);
+}
+.myTable .tableBody table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+}
+.myTable .tableBody table tr th {
+    padding: var(--pd-small);
+    display: flex;
+    justify-content: flex-start;
+}
+.myTable .tableBody table th {
+    color: var(--dark-disable);
+    font-weight: var(--font-normal);
+}
+.myTable .tableBody table tbody {}
+.myTable .tableBody table tbody tr {
+    border-bottom: 2px solid var(--dark-terciary1);
+}
+.myTable .tableBody table tbody tr td {
+    padding: var(--pd-medium) var(--pd-small);
+    color: var(--dark-secondary1);
+    color: var(--dark-disable);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.myTable .tableBody table tbody .lastTr {
+    border: none;
+}
+.myTable .tableBody table tbody .last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.myTable .tableBody table tbody svg {
+    height: 28px;
+    width: 28px;;
+}
+.myTable .tableBody table tbody a svg {
+    fill: var(--dark-disable);
+}
+.myTable .tableBody table tbody a:hover svg {
+    fill: var(--dark-main1);
+}
+.myTable .tableBody table span.type {
+    position: absolute;
+    right: 56px;
+    text-transform: capitalize;
+    background: var(--dark-main1-opc);
+    color: var(--dark-main1);
+    font-weight: var(--font-semibold);
+    border-radius: var(--radius-btn);
+    padding: calc(var(--pd-small) - 8px);
+}
+.myTable .tableBody table span.influencer {
+    background: var(--dark-warning-opc);
+    color: var(--dark-warning);
+    font-weight: var(--font-semibold);
+}
+.masonry {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+}
+.masonry-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: var(--dark-secondary2);
+    padding: var(--pd-medium);
+    border-radius: var(--radius)
+}
+.masonry-card .masonry-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 4px;
+}
+.masonry-card .masonry-head div {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+.masonry-card h3 {
+    font-size: var(--size-normal);
+    color: var(--dark-secondary1);
+    font-weight: var(--font-normal);
+}
+.masonry-card .masonry-head div h6 {
+    color: var(--dark-disable);
+    font-weight: var(--font-normal);
+    font-size: var(--size-x-small)
+}
+.masonry-card .masonry-head div h5 {
+    font-size: var(--size-x-small);
+    color: var(--dark-disable);
+    font-weight: var(--font-semibold);
+}
+.masonry-card .masonry-body {
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;    
+    align-items: stretch;
+    gap: 24px;
+}
+.masonry-card .masonry-body .svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: var(--pd-small);
+    background: var(--dark-main1);
+}
+.masonry-card .masonry-body svg {
+    height: 32px;
+    width: 32px;
+    fill: var(--dark-secondary1);
+}
+.masonry .type {
+    text-transform: capitalize;
+    background: var(--dark-main1-opc);
+    color: var(--dark-main1);
+    font-weight: var(--font-semibold);
+    border-radius: var(--radius-btn);
+    padding: calc(var(--pd-small) - 8px);
+    text-transform: capitalize;
+}
+.masonry .type.influencer {
+    background: var(--dark-warning-opc);
+    color: var(--dark-warning);
+    font-weight: var(--font-semibold);
+}
+.masonry .masonry-body .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+.masonry .masonry-body .details h5 {
+    font-size: var(--size-normal);
+    color: var(--dark-success);
+    font-weight: var(--font-semibold);
+}
+.masonry .masonry-body .details h6 {
+    font-size: var(--size-x-small);
+    color: var(--dark-secondary1);
+    font-weight: var(--font-normal);
+}
+@media (max-width: 425px) {
+    .tableHead {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .tableHead form {}
+    .tableHead .view {
+
+    }
+    .masonry {
+        justify-content: center;
+    }
+    .masonry .masonry-card {
+        width: 100%;
+    }
+    .myTable .tableBody tr {
+        grid-template-columns: 1.5fr 1fr!important;
+    }
+    .type,
+    .responsive {
+        display: none!important;
+    }
+    .myTable .tableBody table thead th,
+    .myTable .tableBody table tbody td {
+        padding: var(--pd-medium) 0!important;
+    }
+}

@@ -1,0 +1,14 @@
+.strategyDetails {
+    border-radius: var(--radius);
+    background: var(--dark-secondary2);
+    padding: var(--pd-small);
+    display: flex;
+    flex-direction: column;
+}
+.strategyDetails .strategyContent {
+    margin-top: var(--pd-big);
+}
+.strategyDetails form {
+    margin-top: 32px;
+    align-self: flex-end;
+}
