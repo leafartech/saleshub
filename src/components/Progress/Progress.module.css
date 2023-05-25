@@ -1,0 +1,38 @@
+.progress {
+    position: relative;
+    width: 100%;
+    border-radius: var(--radius);
+    padding: var(--pd-medium);
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+.dark-progress .bar {
+    position: relative;
+    height: 16px;
+    border-radius: var(--radius);
+    background: var(--dark-disable);
+}
+.dark-progress .bar div {
+    position: absolute;
+    left: -1px;
+    height: 100%;
+    border-radius: var(--radius);
+    background: var(--dark-main1);
+}
+.progress .values {
+    display: flex;
+    justify-content: space-between;
+}
+.dark-progress {
+    color: var(--dark-secondary1);
+    background: var(--dark-secondary2);
+}
+.progress .goalTop {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}

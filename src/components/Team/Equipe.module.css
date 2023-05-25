@@ -1,0 +1,13 @@
+.teamDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.team {
+    margin-right: 24px;
+}
+@media (max-width: 425px) {
+    .team {
+        margin-right: 0;
+    }
+}

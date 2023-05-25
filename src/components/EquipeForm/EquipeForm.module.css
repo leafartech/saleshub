@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: var(--radius);
+    margin-top: 24px;
+    background: var(--dark-secondary2);
+    padding: var(--pd-medium);
+}
+.form .productInpt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form label {
+    color: var(--dark-disable);
+}
+/* @media (max-width: 425px) {
+    .form {
+        display: none;
+    }
+} */
