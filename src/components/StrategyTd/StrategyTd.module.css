@@ -1,0 +1,71 @@
+.taskName {
+    padding: var(--pd-medium) var(--pd-small);
+    color: var(--dark-secondary1);
+    color: var(--dark-disable);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.taskName {
+    display: flex;
+    gap: 12px;
+}
+.taskName .completeTask {
+    width: 18px;
+    height: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: var(--radius-btn);
+    border: 1px solid var(--dark-disable);
+    cursor: pointer;
+}
+.taskName .completeTask.completed {
+    background: var(--dark-main1);
+    border-color: var(--dark-main1);
+}
+.taskName span {
+    position: relative;
+}
+.taskName span.completed {
+    /* text-decoration: line-through; */
+    opacity: .7;
+}
+.taskName span.completed::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--dark-disable);
+    animation-name: expandLine;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+.taskName span.uncomplete::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-disable);
+    animation: shrinkLine 1s forwards;
+}
+@keyframes shrinkLine {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+  @keyframes expandLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }

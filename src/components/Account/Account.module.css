@@ -1,0 +1,10 @@
+.account {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dark-account {
+    background: var(--dark-terciary1);
+}

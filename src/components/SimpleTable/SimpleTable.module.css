@@ -1,0 +1,58 @@
+.simple-table {
+    width: 100%;
+    background: var(--dark-secondary2);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    padding: var(--pd-small);
+}
+.simple-table thead tr {
+    border-bottom: 2px solid var(--dark-terciary1);
+}
+.simple-table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+}
+.simple-table tr th {
+    padding: var(--pd-small);
+    display: flex;
+    justify-content: flex-start;
+}
+.simple-table th {
+    color: var(--dark-disable);
+    font-weight: var(--font-normal);
+}
+.simple-table tbody {}
+.simple-table tbody tr {
+    border-bottom: 2px solid var(--dark-terciary1);
+}
+.simple-table tbody tr td {
+    padding: var(--pd-medium) var(--pd-small);
+    color: var(--dark-secondary1);
+    color: var(--dark-disable);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.simple-table tbody tr td.deleteItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.simple-table tbody tr td svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--dark-warning-opc);
+    cursor: pointer;
+}
+.simple-table tbody tr td svg:hover {
+    fill: var(--dark-warning);
+}
+@media (max-width: 425px) {
+    .simple-table tr {
+        grid-template-columns: 2fr 1fr!important;
+    }
+    .responsive {
+        display: none!important;
+    }
+}
