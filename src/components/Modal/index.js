@@ -29,7 +29,7 @@ export default function Modal({ generalError, error, modalState, buttonClicked, 
                                 {inpt[1] === '' ?
                                 <label className={ styles.textareaLabel }>{inpt[2]}</label>
                                 : ''}
-                                <textarea rows="10" cols="10" value={inpt[1]} key={index} className={ error[inpt[3]] === true ? styles["error-input"] : ''} name={inpt[3]} onChange={e => inptChanging(e)}>
+                                <textarea rows="4" cols="10" value={inpt[1]} key={index} className={ error[inpt[3]] === true ? styles["error-input"] : ''} name={inpt[3]} onChange={e => inptChanging(e)}>
                                 </textarea>
                                 {error[inpt[3]] === true ?
                                 <p className={ `${styles["error-message-text"]}` }>
