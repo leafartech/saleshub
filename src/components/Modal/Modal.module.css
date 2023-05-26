@@ -229,6 +229,7 @@
     position: fixed;
     box-sizing: border-box;
     padding: 0;
+     overflow: scroll;
   }
   .forms .inpts {
     padding: 0 12px;
