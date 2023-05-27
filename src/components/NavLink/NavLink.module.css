@@ -1,0 +1,27 @@
+.navlink {
+    text-decoration: none;
+    color: var(--dark-disable);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.navlink span {
+    font-size: var(--size-small)
+}
+.navlink svg {
+    height: 24px;
+    width: 24px;
+    fill: var(--dark-disable);
+}
+.navlink:hover {
+    color: var(--dark-secondary1);
+}
+.navlink:hover svg {
+    fill: var(--dark-secondary1);
+}
+.navlink.active {
+    color: var(--dark-secondary1)!important;
+}
+.navlink.active svg {
+    fill: var(--dark-secondary1)!important;
+}

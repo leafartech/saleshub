@@ -1,0 +1,63 @@
+.dropdown {
+    position: relative;
+}
+.dropdown .dropdownDiv {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    margin-top: -8px;
+    padding: var(--pd-medium);
+    background: var(--dark-terciary1);
+    border-radius: var(--radius-btn);
+    z-index: -1;
+    transition: 500ms;
+    display: none;
+}
+.dropdown .dropdownDiv.active {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    display: block;
+    transition: 500ms;
+}
+.dropdown .number {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: var(--pd-small);
+    background: var(--dark-terciary1);
+    border-radius: var(--radius-btn) var(--radius-btn) 0 0;
+    border-bottom: 1px solid var(--dark-disable);
+    cursor: pointer;
+}
+.dropdown .number span {
+    font-weight: var(--font-semibold);
+    color: var(--dark-secondary1);
+    background: var(--dark-main1);
+    padding: var(--pd-xx-small) var(--pd-x-small);
+    border-radius: 50%;
+}
+.dropdown .number h5 {
+    font-size: var(--size-small);
+    color: var(--dark-disable);
+    font-weight: var(--font-semibold);
+}
+.dropdown .number svg {
+    position: absolute;
+    right: 16px;
+    height: 24px;
+    width: 24px;
+    fill: var(--dark-secondary1);
+    transform: rotate(270deg);
+    transition: 500ms;
+}
+.dropdown .number svg.active {
+    transform: rotate(360deg);
+    transition: 500ms;
+}
+.dropdown p {
+    color: var(--dark-disable);
+    margin-bottom: 16px;
+    font-weight: var(--font-normal);
+}

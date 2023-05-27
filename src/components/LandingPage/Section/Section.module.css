@@ -1,0 +1,16 @@
+.section {
+    width: 100%;
+    padding: 24px;
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--dark-terciary1);
+}
+@media (max-width: 425px) {
+    .section {
+        padding-top: 0;
+    }
+}

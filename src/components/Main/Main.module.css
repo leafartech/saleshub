@@ -1,0 +1,18 @@
+.main {
+    width: 100%;
+    background: var(--dark-terciary1);
+    padding-bottom: 48px;
+}
+.main .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+@media (max-width: 425px) {
+    .main {
+        padding-top: 36px;
+    }
+}
