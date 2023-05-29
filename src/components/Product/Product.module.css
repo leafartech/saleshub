@@ -1,0 +1,50 @@
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.productInfo .report {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    margin-right: 24px;
+    padding: var(--pd-medium);
+}
+.productInfo .report .division {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productInfo .report .division div {
+    height: 80%;
+    width: 100%;
+    background: var(--dark-disable);
+    padding: 0!important
+}
+.productInfo .report > div div {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--pd-medium);
+}
+.productInfo .report h5 {
+    font-size: var(--size-small);
+    font-weight: var(--font-semibold);
+    color: var(--dark-disable);
+}
+.productInfo .report h4 {
+    font-size: var(--size-small);
+    font-weight: var(--font-normal);
+    color: var(--dark-disable);
+}
+.productInfo .table {
+    margin-right: 24px;
+}
+@media (max-width: 425px) {
+    .productInfo {}
+    .productInfo .report {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+}

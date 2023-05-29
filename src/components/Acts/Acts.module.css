@@ -1,0 +1,27 @@
+.acts {
+    text-decoration: none;
+    font-weight: var(--font-normal);
+    border-radius: var(--radius);
+    padding: var(--pd-medium) var(--pd-big);
+    transition: 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+.dark-acts {
+    color: var(--dark-secondary1);
+    background: var(--dark-secondary2);
+}
+.acts:hover {
+    transition: 500ms;
+    transform: translateY(-20px);
+}
+.acts img {
+    height: 24px;
+    width: 24px;
+    fill: var(--dark-main1);
+}
+@media (max-width: 425px) {
+}
